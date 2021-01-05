@@ -55,33 +55,49 @@ function newElement() {
 }
 
 function orangeTheme() {
-  $('body').css('background', '#FFE3B8')
+  $('body').css('background', '#FFE3B8');
 };
 
 function homepage() {
-  $(".history").hide()
-  $(".badges").hide()
-  $(".settings").hide()
-  $(".todolist").show()
+  $(".history").hide();
+  $(".badges").hide();
+  $(".settings").hide();
+  $(".todolist").show();
+  $("#home").addClass("active")
+  $("#history").removeClass("active")
+  $("#badges").removeClass("active")
+  $("#setting").removeClass("active")
 };
 
 function historys() {
-  $(".todolist").hide()
-  $(".badges").hide()
-  $(".settings").hide()
-  $(".history").show()
+  $(".todolist").hide();
+  $(".badges").hide();
+  $(".settings").hide();
+  $(".history").show();
+  $("#history").addClass("active")
+  $("#home").removeClass("active")
+  $("#badges").removeClass("active")
+  $("#setting").removeClass("active")
 };
 
 function badges() {
-  $(".history").hide()
-  $(".todolist").hide()
-  $(".settings").hide()
-  $(".badges").show()
+  $(".history").hide();
+  $(".todolist").hide();
+  $(".settings").hide();
+  $(".badges").show();
+  $("#badges").addClass("active")
+  $("#history").removeClass("active")
+  $("#home").removeClass("active")
+  $("#setting").removeClass("active")
 };
 
 function settings() {
-  $(".history").hide()
-  $(".badges").hide()
-  $(".todolist").hide()
-  $(".settings").show()
+  $(".history").hide();
+  $(".badges").hide();
+  $(".todolist").hide();
+  $(".settings").show();
+  $("#setting").addClass("active")
+  $("#history").removeClass("active")
+  $("#badges").removeClass("active")
+  $("#home").removeClass("active")
 };
