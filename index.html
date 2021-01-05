@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>repl.it</title>
+    
+  </head>
+
+  <body>
+  <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- For theme buttons. Ajax to change the colour of the backgrounds etc -->
+      <script src = 
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> 
+      </script>
+
+    <div class="header" >
+      <p class = "title">To Do List</p>
+    </div>
+
+    <section class="container">
+
+        <!-- For menu -->
+      <div class="topnav">
+        <a href="#home" onclick = "homepage()"><i class="fa fa-home"></i>Home</a>
+        <a href ="#history" onclick = "historys()"><i class="fa fa-history "></i>History</a>
+        <a href="#badges" onclick = "badges()"><i class="fa fa-circle "></i>Badges</a>
+        <a href="#setting" onclick = "settings()"><i class="fa fa-cog "></i>Setting</a>
+      </div>
+
+      <!-- For Body Part of the Website -->
+      <div class= "body">
+
+        <div class = "todolist">
+          <div class="myDiv" id="newtask">
+            <input type="text" id="myInput" placeholder="New Task">
+            <span onclick="newElement()" class="addBtn">Add</span>
+          </div>
+          <ul id="myUL">
+            <li>Hit the gym</li>
+            <li class="checked">Pay bills</li>
+            <li>Meet George</li>
+            <li>Buy eggs</li>
+            <li>Read a book</li>
+            <li>Organize office</li>
+          </ul>
+        </div>
+
+
+        <div class = "history">
+          <h2> History</h2>
+          <p>Here's some demo History Text</p>
+        </div>
+
+        <div class = "badges">
+          <h2> Badges</h2>
+          <p>Here's some demo Badges Text</p>
+        </div>
+
+        <div class = "settings">
+          <h2> Settings</h2>
+          <button onclick="orangeTheme()"> Orange </button>
+        </div>
+      </div>
+      
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
