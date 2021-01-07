@@ -1,38 +1,8 @@
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
-
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-
 // Create a new list item when clicking on the "Add" button
 function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
+  let tasks = getElementById("tasks").value;
+  let tasksList = [];
+
   if (inputValue === '') {
     alert("You must write something!");
   } else {
@@ -54,10 +24,38 @@ function newElement() {
   }
 }
 
-function orangeTheme() {
-  $('body').css('background', '#FFE3B8');
-};
+/* Dark Mode - Light Mode */
+var darkMode;
 
+if (localStorage.getItem('dark-mode')) {  
+  // if dark mode is in storage, set variable with that value
+  darkMode = localStorage.getItem('dark-mode');  
+} else {  
+  // if dark mode is not in storage, set variable to 'light'
+  darkMode = 'light';  
+}
+
+// set new localStorage value
+localStorage.setItem('dark-mode', darkMode);
+
+
+if (localStorage.getItem('dark-mode') == 'dark') {
+  $('body').addClass('dark');  
+}
+
+$('.dark-button').on('click', function() {  
+  $('body').addClass('dark');  
+  localStorage.setItem('dark-mode', 'dark');
+});
+
+$('.light-button').on('click', function() {  
+  $('body').removeClass('dark');
+  localStorage.setItem('dark-mode', 'light');   
+});
+
+
+
+/*Making the Home Button Functional */
 function homepage() {
   $(".history").hide();
   $(".badges").hide();
@@ -69,6 +67,7 @@ function homepage() {
   $("#setting").removeClass("active")
 };
 
+/*Making the History Button Functional */
 function historys() {
   $(".todolist").hide();
   $(".badges").hide();
@@ -80,6 +79,7 @@ function historys() {
   $("#setting").removeClass("active")
 };
 
+/*Making the Badges Button Functional */
 function badges() {
   $(".history").hide();
   $(".todolist").hide();
@@ -91,6 +91,7 @@ function badges() {
   $("#setting").removeClass("active")
 };
 
+/*Making the Setting Button Functional */
 function settings() {
   $(".history").hide();
   $(".badges").hide();
@@ -101,3 +102,4 @@ function settings() {
   $("#badges").removeClass("active")
   $("#home").removeClass("active")
 };
+

@@ -2,7 +2,17 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color:#222;
+  -webkit-transition: background-color800ms ease;
+  transition: background-color800ms ease;
 }
+
+
+body.dark {
+  background-color:#222;
+  color:#fff;
+}
+  
 
 /*header */
 .header {
@@ -78,7 +88,7 @@ input {
 }
 
 /* Style the "Add" button */
-.addBtn {
+.todo-button {
   padding: 10px;
   width: 30%;
   background: #d9d9d9;
@@ -98,7 +108,7 @@ input {
 /* Style the header */
 .myDiv {
   background-color: #f44336;
-  padding: 30px 40px 60px 30px;
+  padding: 20px 13px 20px 10px;
   color: white;
   text-align: center;
 }
