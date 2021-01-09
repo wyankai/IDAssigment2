@@ -5,6 +5,7 @@ body {
   color:#222;
   -webkit-transition: background-color800ms ease;
   transition: background-color800ms ease;
+  background-color:rgb(190, 190, 190);
 }
 
 
