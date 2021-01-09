@@ -5,7 +5,7 @@ body {
   color:#222;
   -webkit-transition: background-color800ms ease;
   transition: background-color800ms ease;
-  background-color:rgb(190, 190, 190);
+  background-color:rgb(241, 241, 241);
 }
 
 
@@ -19,8 +19,10 @@ body.dark {
 .header {
   padding: 1%;
   width: 100%;
-  background: #ddd;
+  background-blend-mode: darken ;
+  background: rgb(185, 185, 185);
 }
+
 .header p {
   margin-left:7%;
 }
@@ -140,13 +142,13 @@ form input, form button{
   background: white;
 }
 form button{
-  color: #c065c0;
+  color: black;
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover{
-  background: #c065c0;
+  background: black;
   color: white;
 }
 /* STYLING DROPDOWN */
@@ -163,7 +165,7 @@ select{
   overflow: hidden;
 }
 select{
-  color: #c065c0;
+  color: black;
   width: 8rem;
   cursor: pointer;
   padding: 0.7rem;
@@ -171,7 +173,7 @@ select{
 .select::after{
   content: "\25bc";
   position: absolute;
-  color: #c065c0;
+  color: black;
   top: 7px;
   right: 6px;
   pointer-events: none;
