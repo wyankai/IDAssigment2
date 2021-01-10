@@ -3,10 +3,10 @@
 Name: Wee Yan Kai <br>
 Website Link:
 
-## To Do List Website
+## Daily To Do List Website
 
-This is a to do list website that uses localStorage to store the user's to-do tasks. The website also uses ChartJS API to display a chart based on the number the tasks the user managed to finish on the day they set it.
- 
+This is a to do list website that uses localStorage to store the user's daily tasks. This website is meant to kept in the background while the user work to completing their daily tasks. User's can also edit their daily tasks. The website also uses a Quotable API which provides the users with quotes to motivate them while they do their tasks
+
 ## Design Process
  
 The design is for the people who want to use a personalised to-do list.
