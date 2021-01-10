@@ -105,5 +105,6 @@ Ajax function to change the background of the body is taken from:
 
 ### Acknowledgements
 
-- I received inspiration for this project from Dev Ed's To-do List Beginner Project.
+- I received inspiration for this project from Dev Ed's To-do List Beginner Project Video.
 - I received inspiration for this project from the idea of Dailies from Habitica.
+- I received inspiration for this project from Deepak Kumar's JavaScript Fetch API - Quote Generator Video.
