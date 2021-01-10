@@ -5,7 +5,7 @@ Website Link:
 
 ## Daily To Do List Website
 
-This is a to do list website that uses localStorage to store the user's daily tasks. This website is meant to kept in the background while the user work to completing their daily tasks. User's can also edit their daily tasks. The website also uses a Quotable API which provides the users with quotes to motivate them while they do their tasks
+This is a to do list website that uses localStorage to store the user's daily tasks. This website is meant to kept in the background while the user work to completing their daily tasks. User's can also edit their daily tasks. The website also uses Quotable API which provides the users with quotes to motivate them while they do their tasks
 
 ## Design Process
  
@@ -17,7 +17,6 @@ The website stores the user's input into the localStorage so that the User's dat
 ## Features
 
 Feature 1: To-do List that uses localStorage so the the users will not lose their to-do list the moment they refresh the page.
-Feature 2: History Button that shows the users the tasks that they have already completed.
 Feature 3: Completed button can be pressed again in case the user accidentally pressed the completed button
 Feature 4: Badges button that shows the Users the achievement they have unlocked.
 Feature 5: Settings button that allow the users to toggle Light and Dark Mode.
