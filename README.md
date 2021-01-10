@@ -72,7 +72,20 @@ End Result(Success): Tasks remains in the to-do list even after being reloaded<b
 Expected Result: A desciption of how the badges is obtained will appear<br>
 End Result: A desciption of how the badges is obtained will appear<br>
 <br>
-
+3. Settings:
+   1. Press the Settings button
+   2. Press the Light Mode/Dark Mode button
+   3.Reload the page
+   
+Expected Result: The page will be dark mode/light mode according to the button you pressed even after you reload the page.<br>
+End Result: The page will be dark mode/light mode according to the button you pressed even after you reload the page.<br>
+<br>
+4. Inspirational Quotes:
+   1. Press the "Get Quote" button
+   
+Expected Result: A quote as well as the author is shown<br>
+End Result: A quote as well as the author is shown<br>
+<br>
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
@@ -80,8 +93,12 @@ In addition, you should mention in this section how your project looks and works
 Currently the uncompleted button for the filter does not work.
 
 ## Credits
-
-### Content
+Icon stylesheet taken from :
+- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+Quotable API used in the project:
+- https://api.quotable.io/random
+Ajax function to change the background of the body is taken from: 
+- https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js
 
 ### Media
 - The design assets for the badges are designed by myself.
@@ -89,4 +106,4 @@ Currently the uncompleted button for the filter does not work.
 ### Acknowledgements
 
 - I received inspiration for this project from Dev Ed's To-do List Beginner Project.
-- I received inspiration for this project from the idea of Dailies from Habitica
+- I received inspiration for this project from the idea of Dailies from Habitica.
