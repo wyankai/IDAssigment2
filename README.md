@@ -12,19 +12,24 @@ This is a to do list website that uses localStorage to store the user's daily ta
 The design is for the people who want to use a personalised to-do list.
 The website stores the user's input into the localStorage so that the User's data would not be lost the moment they reload the screen.
 
--As the creator of the websote, I want to create a platform for the users for them to store their todo-list as well as badges function and a chart function to help show the users how productive they are.
+-As the creator of the websote, I want to create a platform for the users for them to store their daily todo-list as well as badges function and a quotes function to help motivate the users.
 
 ## Features
 
-Feature 1: To-do List that uses localStorage so the the users will not lose their to-do list the moment they refresh the page.
-Feature 3: Completed button can be pressed again in case the user accidentally pressed the completed button
+Feature 1: To-do List that uses localStorage so the the users will not lose their daily to-do list the moment they refresh the page.
+Feature 2: Completed button can be pressed again in case the user accidentally pressed the completed button
+Feature 3: Delete button is that can remove data from localStorage database.
 Feature 4: Badges button that shows the Users the achievement they have unlocked.
 Feature 5: Settings button that allow the users to toggle Light and Dark Mode.
 Feature 6: Light and Dark Mode that uses localStorage so that mode will still be on even after the user had reloaded the page.
  
 ### Existing Features
-- Feature 1: To-do List
-- Feature 2: Settings Section
+Feature 1: To-do List that uses localStorage so the the users will not lose their daily to-do list the moment they refresh the page.
+Feature 2: Completed button can be pressed again in case the user accidentally pressed the completed button
+Feature 3: Delete button is that can remove data from localStorage database.
+Feature 4: Badges button that shows the Users the achievement they have unlocked.
+Feature 5: Settings button that allow the users to toggle Light and Dark Mode.
+Feature 6: Light and Dark Mode that uses localStorage so that mode will still be on even after the user had reloaded the page.
 
 ### Features Left to Implement
 - ChartJS API
@@ -34,7 +39,9 @@ Feature 6: Light and Dark Mode that uses localStorage so that mode will still be
 ## Technologies Used
 - HTML
 
--CSS
+- CSS
+
+- DOM
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
