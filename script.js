@@ -1,24 +1,3 @@
-//IMPLEMENTATION OF API FOR THE MOTIVATIONAL QUOTE
-const api = "https://api.quotable.io/random";
-
-const quote = document.getElementById("quote");
-const author = document.getElementById("author");
-const btn = document.getElementById("btn");
-
-btn.addEventListener("click", getQuote);
-
-//CODE TO LOAD CODE AS SOON AS THE PAGE IS LOADED
-document.addEventListener("DOMContentLoaded", getQuote)
-
-function getQuote() {
-  fetch(api)
-    .then((res) => res.json())
-    .then((data) => {
-      quote.innerHTML = `"${data.content}"`;
-      author.innerHTML = `- ${data.author}`;
-    });
-}
-
 //TODOLIST CODE
 //selectors
 const todoInput = document.querySelector('.todo_input');
@@ -167,8 +146,32 @@ function deleteCheck(e) {
     }
 }
 
+//QUOTE CODE
+//IMPLEMENTATION OF API FOR THE MOTIVATIONAL QUOTE
+const api = "https://api.quotable.io/random";
 
-//LIGHT MODE AND DARK MODE
+const quote = document.getElementById("quote");
+const author = document.getElementById("author");
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", getQuote);
+
+//CODE TO LOAD CODE AS SOON AS THE PAGE IS LOADED
+document.addEventListener("DOMContentLoaded", getQuote)
+
+function getQuote() {
+  fetch(api)
+    .then((res) => res.json())
+    .then((data) => {
+      quote.innerHTML = `"${data.content}"`;
+      author.innerHTML = `- ${data.author}`;
+    });
+}
+
+
+
+
+//LIGHT MODE AND DARK MODE CODE
 var darkMode;
 
 if (localStorage.getItem('dark-mode')) {  

@@ -78,7 +78,7 @@ body.dark {
   color: black;
 }
 
-/* Homepage */
+/* HOMEPAGE */
 /* STYLING OF THE INPUT*/
 input {
   margin: 0;
@@ -249,7 +249,8 @@ select{
   opacity: 0;
 }
 
-/*INSPIRATIONAL QUOTE*/
+/*STYLING INSPIRATIONAL QUOTE*/
+/* INSPIRATIONAL QUOTE */
 #quoteContainer{
   opacity: 50 ;
   position: absolute;
@@ -274,6 +275,8 @@ select{
   color:white;
 }
 
+/*STYLING OF THE BADGES*/
+/*BADGES*/
 .badge{
   width: 20vh;
   margin: 1%;
@@ -299,6 +302,7 @@ select{
   background-color: grey;
 }
 
+/*SHOWING DESCIPTION WHEN HOVER*/
 .acontainer:hover .overlay {
   opacity: 1;
 }
