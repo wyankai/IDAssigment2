@@ -6,6 +6,8 @@ const author = document.getElementById("author");
 const btn = document.getElementById("btn");
 
 btn.addEventListener("click", getQuote);
+
+//CODE TO LOAD CODE AS SOON AS THE PAGE IS LOADED
 document.addEventListener("DOMContentLoaded", getQuote)
 
 function getQuote() {
