@@ -8,7 +8,18 @@ Website Link: https://wyankai.github.io/IDAssigment2/
 
 This is a to do list website that uses localStorage to store the user's daily tasks. This website is meant to kept in the background while the user work to completing their daily tasks. User's can also edit their daily tasks. The website also uses Quotable API which provides the users with quotes to motivate them while they do their tasks
 
+<b>Laptop Preview</b>
+
 ![homepage](https://user-images.githubusercontent.com/73118690/104125163-02110d00-5390-11eb-8398-a49c467db829.PNG)
+![badges](https://user-images.githubusercontent.com/73118690/104125223-5ae0a580-5390-11eb-8312-d3a4891bf630.PNG)
+![Settings](https://user-images.githubusercontent.com/73118690/104125225-5b793c00-5390-11eb-92c5-d47414177669.PNG)
+
+<b>Phone Preview</b>
+
+![homepage phone](https://user-images.githubusercontent.com/73118690/104125164-03423a00-5390-11eb-8d8a-0f4363fbc7be.PNG)
+![Badges phone](https://user-images.githubusercontent.com/73118690/104125222-59af7880-5390-11eb-843b-1328e1027ac6.PNG)
+![Settings phone](https://user-images.githubusercontent.com/73118690/104125224-5ae0a580-5390-11eb-8c5a-5e84823ef778.PNG)
+
 
 ## Design Process
  
