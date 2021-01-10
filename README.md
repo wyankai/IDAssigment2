@@ -1,7 +1,7 @@
 # ID Assignment 2
 
 Name: Wee Yan Kai <br>
-Website Link:
+Website Link: https://wyankai.github.io/IDAssigment2/
 
 ## Daily To Do List Website
 
@@ -30,38 +30,54 @@ Feature 3: Delete button is that can remove data from localStorage database.
 Feature 4: Badges button that shows the Users the achievement they have unlocked.
 Feature 5: Settings button that allow the users to toggle Light and Dark Mode.
 Feature 6: Light and Dark Mode that uses localStorage so that mode will still be on even after the user had reloaded the page.
+Feature 7: Users will be able to customise the colour of the text on the website.
+Feature 8: A filter button for the users to filter out their tasks
 
 ### Features Left to Implement
-- ChartJS API
-- History Button
-- Badges in the badges section
+Feature 7: Users will be able to customise the colour of the text on the website.
 
 ## Technologies Used
 - HTML
 
-- CSS
+- Javascript
+    - The project uses **Javascript** for the scripting of the website
 
-- DOM
+- CSS
+    - The project uses **CSS** to style the website.
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
+
+- Quotable API
+    - The project uses **Quotable API** to print inspirational quotes 
 
 
 ## Testing
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+1. To Do List:
+    1. Press the home button
+    2. Type the a new daily tasks.
+    3. Check if the delete button and the checked button works perfectly.
+    4. Reload the page to see if the tasks stays there.
+    
+Expected Result: Tasks remains in the to-do list even after being reloaded<br>
+End Result(Success): Tasks remains in the to-do list even after being reloaded<br>
+<br>
+2. Badges Collection:
+   1. Press the badges button
+   2. Hover over the "Beginner" badge
+   
+Expected Result: A desciption of how the badges is obtained will appear<br>
+End Result: A desciption of how the badges is obtained will appear<br>
+<br>
+
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+### Bugs
+Currently the uncompleted button for the filter does not work.
 
 ## Credits
 
@@ -73,3 +89,4 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Acknowledgements
 
 - I received inspiration for this project from Dev Ed's To-do List Beginner Project.
+- I received inspiration for this project from the idea of Dailies from Habitica
