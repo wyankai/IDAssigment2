@@ -70,7 +70,7 @@ End Result(Success): Tasks remains in the to-do list even after being reloaded<b
    2. Hover over the "Beginner" badge
    
 Expected Result: A desciption of how the badges is obtained will appear<br>
-End Result: A desciption of how the badges is obtained will appear<br>
+End Result(Success): A desciption of how the badges is obtained will appear<br>
 <br>
 3. Settings:
    1. Press the Settings button
@@ -78,13 +78,13 @@ End Result: A desciption of how the badges is obtained will appear<br>
    3.Reload the page
    
 Expected Result: The page will be dark mode/light mode according to the button you pressed even after you reload the page.<br>
-End Result: The page will be dark mode/light mode according to the button you pressed even after you reload the page.<br>
+End Result(Success): The page will be dark mode/light mode according to the button you pressed even after you reload the page.<br>
 <br>
 4. Inspirational Quotes:
    1. Press the "Get Quote" button
    
 Expected Result: A quote as well as the author is shown<br>
-End Result: A quote as well as the author is shown<br>
+End Result(Success): A quote as well as the author is shown<br>
 <br>
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
