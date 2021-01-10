@@ -1,4 +1,4 @@
-/*Styling of the website's body*/
+/*STYLING OF THE WEBSITE'S BODY*/
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -10,12 +10,12 @@ body {
 
 
 body.dark {
-  background-color:#222;
+  background-color:rgb(59, 59, 59);
   color:#fff;
 }
   
 
-/*header */
+/*HEADER */
 .header {
   padding: 1%;
   width: 100%;
@@ -23,7 +23,7 @@ body.dark {
   background: rgb(185, 185, 185);
 }
 
-.header p {
+.header h2 {
   margin-left:7%;
 }
 
@@ -34,7 +34,7 @@ body.dark {
   flex: 3 1 0 ;
 }
 
-/*Body Flex Box*/
+/*FLEX BOX*/
 .container{
     display: flex;
     width: 100%;
@@ -48,7 +48,7 @@ body.dark {
 }
 
 
-/* Navigation Bar */
+/* NAVIGATION BAR */
 .topnav {
   overflow: hidden;
   display: flex;
@@ -79,7 +79,7 @@ body.dark {
 }
 
 /* Homepage */
-/* Style the input */
+/* STYLING OF THE INPUT*/
 input {
   margin: 0;
   border: none;
@@ -90,7 +90,7 @@ input {
   font-size: 16px;
 }
 
-/* Style the "Add" button */
+/* STYLE THE "ADD" BUTTON */
 .todo-button {
   padding: 10px;
   width: 30%;
@@ -108,7 +108,7 @@ input {
   background-color: #bbb;
 }
 
-/* Style the header */
+/* STYLING OF THE HEADER*/
 .myDiv {
   background-color: #f44336;
   padding: 20px 13px 20px 10px;
@@ -116,19 +116,19 @@ input {
   text-align: center;
 }
 
-/* Clear floats after the header */
+/* CLEAR FLOATS AFTER THE HEADER*/
 .myDiv :after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Include the padding and border in an element's total width and height */
+/* INCLUDING PADDING AND BORDER */
 * {
   box-sizing: border-box;
 }
 
-/* STYLYING INPUT ELEMENT AND TH EBUTTON */
+/* STYLYING INPUT ELEMENT AND THE BUTTON */
 header,form{
   display: flex;
   min-height: 15vh;
@@ -249,4 +249,28 @@ select{
   opacity: 0;
 }
 
+/*INSPIRATIONAL QUOTE*/
+#quoteContainer{
+  opacity: 50 ;
+  position: absolute;
+  bottom:0;
+  background-color: grey;
+  border: 0;
+  height: 20wh;
+  width: 72%;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+}
+
+#btn{
+  margin: 1% auto;
+  width: 50%;
+}
+
+#output{
+  margin: 25px auto;
+  font-size: 26px;
+  color:white;
+}
 

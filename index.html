@@ -18,7 +18,7 @@
       <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
     <div class="header" >
-      <p class = "title">To Do List</p>
+      <h2>To Do List</h2>
     </div>
 
     <section class="container">
@@ -30,7 +30,6 @@
         <!-- For navigation menu -->
       <div class="topnav">
         <a id = "home" onclick = "homepage()"><i class="fa fa-home"></i>Home</a>
-        <a id = "history" onclick = "historys()"><i class="fa fa-history "></i>History</a>
         <a id ="badges" onclick = "badges()"><i class="fa fa-circle "></i>Badges</a>
         <a id ="setting" onclick = "settings()"><i class="fa fa-cog "></i>Setting</a>
       </div>
@@ -40,7 +39,7 @@
 
         <div class = "todolist">
           <form>
-            <input type="text" placeholder="Enter The Work" class="todo_input" />
+            <input type="text" placeholder="Daily Task" class="todo_input" />
             <button class="todo_button" type="submit">
                 <i class="fas fa-plus-square"></i>
             </button>
@@ -55,13 +54,6 @@
           <div class="todo_container">
             <ul class="todo_list"></ul>
           </div>
-        </div>
-
-
-        <div class = "history">
-          <h2> History</h2>
-          <button onclick = "chart()">Chart</button>
-          <p>Here's some demo History Text</p>
         </div>
 
         <div class = "badges">
@@ -79,7 +71,14 @@
           <h2>Colors</h2>
           <p>More Text colour option coming soon</p>
         </div>
-      </div>
+
+        <div id="quoteContainer">
+          <div class="quote-box">
+            <p id="quote">"Quote goes here..."</p>
+            <small id="author">- Author</small>
+          </div>
+          <button id="btn">Get Quote</button>
+        </div>
       
     </section>
     <script src="script.js"></script>

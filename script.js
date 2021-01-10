@@ -1,3 +1,23 @@
+//IMPLEMENTATION OF API FOR THE MOTIVATIONAL QUOTE
+const api = "https://api.quotable.io/random";
+
+const quote = document.getElementById("quote");
+const author = document.getElementById("author");
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", getQuote);
+document.addEventListener("DOMContentLoaded", getQuote)
+
+function getQuote() {
+  fetch(api)
+    .then((res) => res.json())
+    .then((data) => {
+      quote.innerHTML = `"${data.content}"`;
+      author.innerHTML = `- ${data.author}`;
+    });
+}
+
+//TODOLIST CODE
 //selectors
 const todoInput = document.querySelector('.todo_input');
 const todoButton = document.querySelector('.todo_button');
@@ -21,9 +41,11 @@ function addTodo(event) {
     newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo_item');
     todoDiv.appendChild(newTodo);
+    //When input bar is empty
     if(todoInput.value === ""){
         return null
     }
+    //Saving to localStorage
     saveLocalTodos(todoInput.value)
     //check mark BUTTON
     const completedButton = document.createElement('button');
@@ -41,25 +63,7 @@ function addTodo(event) {
     todoInput.value = ""
 }
 
-//DELETE & CHECK
-function deleteCheck(e) {
-    const item = e.target;
-    //DELETE ITEM
-    if (item.classList[0] === "delete_btn") {
-        const todo = item.parentElement;
-        //ANIMATION TRANSITION
-        todo.classList.add("fall")
-        removeLocalTodos(todo);
-        todo.addEventListener('transitionend', function () {
-            todo.remove()
-        })
-    }
-    //COMPLETE ITEM
-    if (item.classList[0] === "complete_btn") {
-        const todo = item.parentElement;
-        todo.classList.toggle("completedItem")
-    }
-}
+
 //FILTERING THE TASKS ACCORDING THE OPTION
 function filterTodo(e) {
     const todos = todoList.childNodes;
@@ -70,16 +74,16 @@ function filterTodo(e) {
                 break;
             case "completed":
                 if (todos[i].classList.contains('completedItem')) {
-                    todos[i].style.display = "flex";
+                  todos[i].style.display = "flex";
                 } else {
-                    todos[i].style.display = "none";
+                  todos[i].style.display = "none";
                 }
                 break;
             case "uncompleted":
                 if (!todos[i].classList.contains('completedItem')) {
-                    todos[i].style.display = "flex";
+                  todos[i].style.display = "flex";
                 } else {
-                    todos.style.display = "none";
+                  todos[i].style.display = "none";
                 }
                 break;
         }
@@ -128,6 +132,7 @@ function getTodos(){
   }); 
 }
 
+//REMOVING OF ITEMS FROM THE LOCALSTORAGE
 function removeLocalTodos(todo){
   let todos;
   if(localStorage.getItem('todos') === null){
@@ -140,8 +145,28 @@ function removeLocalTodos(todo){
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
+//DELETE & CHECK
+function deleteCheck(e) {
+    const item = e.target;
+    //DELETE ITEM
+    if (item.classList[0] === "delete_btn") {
+        const todo = item.parentElement;
+        //ANIMATION TRANSITION
+        todo.classList.add("fall")
+        removeLocalTodos(todo);
+        todo.addEventListener('transitionend', function () {
+            todo.remove()
+        })
+    }
+    //COMPLETE ITEM
+    if (item.classList[0] === "complete_btn") {
+        const todo = item.parentElement;
+        todo.classList.toggle("completedItem")
+    }
+}
 
-/* Dark Mode - Light Mode */
+
+//LIGHT MODE AND DARK MODE
 var darkMode;
 
 if (localStorage.getItem('dark-mode')) {  
@@ -172,50 +197,32 @@ $('.light-button').on('click', function() {
 
 
 
-/*Making the Home Button Functional */
+//MAKING THE NAVIGATION MENU BUTTONS FUNCTION
 function homepage() {
-  $(".history").hide();
   $(".badges").hide();
   $(".settings").hide();
   $(".todolist").show();
   $("#home").addClass("active")
-  $("#history").removeClass("active")
-  $("#badges").removeClass("active")
-  $("#setting").removeClass("active")
-};
-
-/*Making the History Button Functional */
-function historys() {
-  $(".todolist").hide();
-  $(".badges").hide();
-  $(".settings").hide();
-  $(".history").show();
-  $("#history").addClass("active")
-  $("#home").removeClass("active")
   $("#badges").removeClass("active")
   $("#setting").removeClass("active")
 };
 
 /*Making the Badges Button Functional */
 function badges() {
-  $(".history").hide();
   $(".todolist").hide();
   $(".settings").hide();
   $(".badges").show();
   $("#badges").addClass("active")
-  $("#history").removeClass("active")
   $("#home").removeClass("active")
   $("#setting").removeClass("active")
 };
 
 /*Making the Setting Button Functional */
 function settings() {
-  $(".history").hide();
   $(".badges").hide();
   $(".todolist").hide();
   $(".settings").show();
   $("#setting").addClass("active")
-  $("#history").removeClass("active")
   $("#badges").removeClass("active")
   $("#home").removeClass("active")
 };
