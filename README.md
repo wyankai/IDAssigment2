@@ -108,11 +108,11 @@ Currently the uncompleted button for the filter does not work.
 
 ## Credits
 Icon stylesheet taken from :
-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css <br>
 Quotable API used in the project:
-- https://api.quotable.io/random
+- https://api.quotable.io/random<br>
 Ajax function to change the background of the body is taken from: 
-- https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js
+- https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js<br>
 
 ### Media
 - The design assets for the badges are designed by myself.
